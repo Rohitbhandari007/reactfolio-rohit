@@ -13,30 +13,43 @@ const Works = () => {
 				title="Work"
 				body={
 					<div className="works-body">
-						<div className="work">
-							<img
-								src="./facebook.png"
-								alt="facebook"
-								className="work-image"
-							/>
-							<div className="work-title">Facebook</div>
-							<div className="work-subtitle">
-								Software Engineer
-							</div>
-							<div className="work-duration">2019 - Present</div>
-						</div>
+						
 
 						<div className="work">
 							<img
-								src="./twitter.png"
+								src="./work.png"
 								alt="twitter"
 								className="work-image"
 							/>
-							<div className="work-title">Twitter</div>
+							<div className="work-title">Pathways Technologies Pvt Ltd</div>
 							<div className="work-subtitle">
-								Software Engineer
+								Full Stack Web Developer
 							</div>
-							<div className="work-duration">2019 - Present</div>
+							<div className="work-duration">Aug 2022 - Present </div>
+						</div>
+						<div className="work">
+							<img
+								src="./work.png"
+								alt="twitter"
+								className="work-image"
+							/>
+							<div className="work-title">Freelance</div>
+							<div className="work-subtitle">
+								Full Stack Web Developer
+							</div>
+							<div className="work-duration">Feb 2022 - Jul 2022 </div>
+						</div>
+						<div className="work">
+							<img
+								src="./work.png"
+								alt="facebook"
+								className="work-image"
+							/>
+							<div className="work-title">API TECH PVT LTD</div>
+							<div className="work-subtitle">
+								Front End Web Developer
+							</div>
+							<div className="work-duration">Feb 2020 - Jan 2022 </div>
 						</div>
 					</div>
 				}
