@@ -68,7 +68,14 @@
 .about-socials-mobile {
 	display: none;
 }
-
+.skills {
+	display: flex;
+	flex-direction: column;
+	/* color: black; */
+}
+.skill {
+	/* color: black; */
+}
 @media (max-width: 1024px) {
 	.about-logo {
 		z-index: 100;

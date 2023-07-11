@@ -15,9 +15,10 @@ const About = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
-
+	
 	const currentSEO = SEO.find((item) => item.page === "about");
-
+	console.log(INFO.about.skills)
+	const skills = INFO.about.skills
 	return (
 		<React.Fragment>
 			<Helmet>
@@ -47,6 +48,20 @@ const About = () => {
 
 								<div className="subtitle about-subtitle">
 									{INFO.about.description}
+									{/* {skills} */}
+
+									<br />
+									<div className="skills">
+									
+										{
+										skills.map((skill)=>(
+											<div className="skill" key={skill}>
+												{skill}
+											</div>
+										))
+										}
+
+									</div>
 								</div>
 							</div>
 

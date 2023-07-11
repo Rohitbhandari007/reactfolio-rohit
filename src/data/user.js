@@ -25,6 +25,7 @@ const INFO = {
 		title: "I’m Rohit B. I live in Nepal, where I design the future.",
 		description:
 			"I take great pride in the progress I've achieved thus far, constantly seeking new challenges to further enhance my skills and contribute to groundbreaking projects. With a strong foundation in web development and a commitment to staying at the forefront of technological advancements, I am poised to make a significant impact in designing the future.",
+		skills:["JavaScript", "TypeScript","Python","AWS Services","Django","React","VueJs","Docker"]
 	},
 
 	articles: {

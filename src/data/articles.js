@@ -861,6 +861,6 @@ class Order(models.Model):
 	};
 }
 
-const myArticles = [article_1, article_2, article_3];
+const myArticles = [article_1, article_2];
 
 export default myArticles;
