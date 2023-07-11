@@ -5,6 +5,8 @@
 	border-radius: 20px;
 	opacity: 0.8;
 	height: 100%;
+	/* border: 1px solid #e1e1e1; */
+	background-color: #d1e8ff;
 }
 
 .project a {

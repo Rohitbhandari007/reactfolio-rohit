@@ -1,6 +1,6 @@
 import React from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { solarizedlight } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { dracula } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 function article_1() {
 	return {
@@ -44,7 +44,7 @@ function article_1() {
 					<div className="paragraph">
 						<SyntaxHighlighter
 							language="python"
-							style={solarizedlight}
+							style={dracula}
 						>
 							{`django-admin startproject mainproject
 cd mainproject
@@ -62,7 +62,7 @@ python manage.py startapp payment`}
 					<div className="paragraph">
 						<SyntaxHighlighter
 							language="python"
-							style={solarizedlight}
+							style={dracula}
 						>
 							{`from django.db import models
 
@@ -91,7 +91,7 @@ class Order(models.Model):
 					<div className="paragraph">
 						<SyntaxHighlighter
 							language="python"
-							style={solarizedlight}
+							style={dracula}
 						>
 							{`from django.shortcuts import render
 from .models import Order
@@ -121,7 +121,7 @@ def order_checkout(request, id):
 					<div className="paragraph">
 						<SyntaxHighlighter
 							language="python"
-							style={solarizedlight}
+							style={dracula}
 						>
 							{`from django.urls import path
 from .views import *
@@ -138,7 +138,7 @@ urlpatterns = [
 					<div className="paragraph">
 						<SyntaxHighlighter
 							language="html"
-							style={solarizedlight}
+							style={dracula}
 						>
 							{`{% extends 'payment/base.html' %}
 
@@ -177,7 +177,7 @@ urlpatterns = [
 					<div className="paragraph">
 						<SyntaxHighlighter
 							language="html"
-							style={solarizedlight}
+							style={dracula}
 						>
 							{`{% extends 'payment/base.html' %}
 
@@ -221,7 +221,7 @@ urlpatterns = [
 					<div className="paragraph">
 						<SyntaxHighlighter
 							language="html"
-							style={solarizedlight}
+							style={dracula}
 						>
 							{`<!--This url is for test environment -->
 
@@ -241,7 +241,7 @@ urlpatterns = [
 					<div className="paragraph">
 						<SyntaxHighlighter
 							language="html"
-							style={solarizedlight}
+							style={dracula}
 						>
 							{`<input value="10" name="tAmt" type="hidden">
 <input value="10" name="amt" type="hidden">
@@ -304,7 +304,7 @@ urlpatterns = [
 					<div className="paragraph">
 						<SyntaxHighlighter
 							language="javascript"
-							style={solarizedlight}
+							style={dracula}
 						>
 							{`{
     'amt': 'amount', //total amount of service 
@@ -325,7 +325,7 @@ urlpatterns = [
 					<div className="paragraph">
 						<SyntaxHighlighter
 							language="python"
-							style={solarizedlight}
+							style={dracula}
 						>
 							{`pip install requests
 pip install xmltodict`}
@@ -334,7 +334,7 @@ pip install xmltodict`}
 					<div className="paragraph">
 						<SyntaxHighlighter
 							language="python"
-							style={solarizedlight}
+							style={dracula}
 						>
 							{`from django.shortcuts import render,redirect,get_object_or_404
 from .models import Order
@@ -390,7 +390,7 @@ def payment_failed(request):
 					<div className="paragraph">
 						<SyntaxHighlighter
 							language="python"
-							style={solarizedlight}
+							style={dracula}
 						>
 							{`# In Test environment, Esewa only allows max 100 rupees 
 # Obviously this cannot handle every product price 
@@ -455,7 +455,7 @@ function article_2() {
 					signature for the encryption and decryption of their
 					payload. Its not necessary in the test environment but will
 					be used in production anyway :
-					<SyntaxHighlighter language="python" style={solarizedlight}>
+					<SyntaxHighlighter language="python" style={dracula}>
 						{`pip install python-jose`}
 					</SyntaxHighlighter>
 				</div>
@@ -473,7 +473,7 @@ function article_2() {
 						sure credentials are safe.
 					</b>
 					<br></br>
-					<SyntaxHighlighter language="python" style={solarizedlight}>
+					<SyntaxHighlighter language="python" style={dracula}>
 						{`import datetime
 import json
 import uuid 
@@ -501,7 +501,7 @@ class HBLGetway:
 					we have to encrypt it later as a string.
 				</div>
 				<div className="paragraph">
-					<SyntaxHighlighter language="python" style={solarizedlight}>
+					<SyntaxHighlighter language="python" style={dracula}>
 						{`def get_encrypted_payload(self,**kwargs):
 
 	#dummy order
@@ -627,7 +627,7 @@ class HBLGetway:
 						directory in this code which you can change as per your
 						convienence
 					</b>
-					<SyntaxHighlighter language="python" style={solarizedlight}>
+					<SyntaxHighlighter language="python" style={dracula}>
 						{`def encrypt_and_sign_payload(self,payload):
 signin_algorithm =settings.SIGNIN
 main_encryption_algorithm= settings.ENCMAIN
@@ -661,7 +661,7 @@ return token_string
 					Now we need to call the api using this paylaod:
 					<br></br>
 					You will be able to see the payment page :
-					<SyntaxHighlighter language="python" style={solarizedlight}>
+					<SyntaxHighlighter language="python" style={dracula}>
 						{`class HBLPaymentView(APIView):
 
     base_url = settings.HBL_URL
@@ -702,7 +702,7 @@ return token_string
 					<br></br>
 					We will create a method in the same class that we previously
 					craeted and create another payload for the process :
-					<SyntaxHighlighter language="python" style={solarizedlight}>
+					<SyntaxHighlighter language="python" style={dracula}>
 						{`    def get_transaction_status(self, orderNo):
         request_payload = {
           
@@ -741,7 +741,7 @@ return token_string
 				</div>
 				<div className="paragraph">
 					Now lets hit the API to check our order
-					<SyntaxHighlighter language="python" style={solarizedlight}>
+					<SyntaxHighlighter language="python" style={dracula}>
 						{`class HBLVerifyView(APIView):
 	hbl_payload = HBLGetway()
     base_url = settings.HBL_URL
@@ -770,6 +770,8 @@ return token_string
 					
 `}
 					</SyntaxHighlighter>
+					<br></br>
+					In this way you can impmplement HBL payment system in your application.
 				</div>
 			</React.Fragment>
 		),
@@ -818,7 +820,7 @@ function article_3() {
 					<div className="paragraph">
 						<SyntaxHighlighter
 							language="python"
-							style={solarizedlight}
+							style={dracula}
 						>
 							{`django-admin startproject mainproject
 cd mainproject
@@ -836,7 +838,7 @@ python manage.py startapp payment`}
 					<div className="paragraph">
 						<SyntaxHighlighter
 							language="python"
-							style={solarizedlight}
+							style={dracula}
 						>
 							{`from django.db import models
 
