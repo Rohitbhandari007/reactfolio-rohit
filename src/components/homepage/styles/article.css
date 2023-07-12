@@ -5,11 +5,11 @@
 	mix-blend-mode: normal;
 	border-radius: 20px;
 	opacity: 0.8;
-	background-color: #d1e8ff;
+	background-color: #222;
 }
 
 .homepage-article:hover {
-	background: #fafafa;
+	background: #111;
 	opacity: 1;
 	transition: background-color 0.3s ease-in-out;
 }

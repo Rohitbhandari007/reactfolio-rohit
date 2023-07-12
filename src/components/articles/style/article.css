@@ -20,11 +20,11 @@
 	border-radius: 20px;
 	opacity: 0.8;
 	padding: 30px;
-	background-color: #d1e8ff;
+	background-color: #222;
 }
 
 .article-right-side:hover {
-	background: #fafafa;
+	background: #222;
 	opacity: 1;
 	transition: background-color 0.3s ease-in-out;
 }
@@ -36,7 +36,7 @@
 }
 
 .article-title {
-	color: #000000;
+	color: white;
 	font-size: 16px;
 	font-weight: 600;
 }
@@ -47,6 +47,7 @@
 	color: var(--secondary-color);
 	font-weight: 480;
 	line-height: 25px;
+	color: white;
 }
 
 .article-link {
